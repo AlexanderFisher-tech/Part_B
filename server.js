@@ -15,7 +15,7 @@ class Server {
       res.end(responseMessage);
     })
     
-    server.listen(port, "localhost", () => {
+    server.listen(port, () => {
       console.log("listening for requests")
     })
   }
@@ -42,5 +42,6 @@ class Server {
     return TimeStamp.getDate()
   }
 }
+const PORT = process.env.PORT || 8080;
 
-Server.startServer(8080)
+Server.startServer(PORT)
