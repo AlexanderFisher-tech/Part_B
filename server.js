@@ -42,5 +42,6 @@ class Server {
     return TimeStamp.getDate()
   }
 }
+const PORT = process.env.PORT || 8080;
 
-Server.startServer(8080)
+Server.startServer(PORT)
